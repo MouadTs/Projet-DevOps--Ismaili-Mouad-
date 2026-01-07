@@ -16,10 +16,10 @@ pipeline{
             }
         }
         stage('Archive') {
-    steps {
-        archiveArtifacts artifacts: '**/*.java', allowEmptyArchive: true
-    }
-}
+            steps {
+                archiveArtifacts artifacts: '**/*.java', allowEmptyArchive: true
+            }
+        }
 
     }
 }
